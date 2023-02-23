@@ -220,13 +220,20 @@ div.bandeaufunfacts{
     top: 94%;
 }
 
-#scroll-text{
+.scroll-text{
     position: absolute;
     display: inline-block;                /* modèle de boîte en ligne */
-    padding-right: 2em;                   /* un peu d'espace pour la transition */
-    padding-left: 100%;                   /* placement à droite du conteneur */
+    padding-right: 0;                   /* un peu d'espace pour la transition */
+    padding-left: 5px;                   /* placement à droite du conteneur */
     white-space: nowrap;                  /* pas de passage à la ligne */
-    animation: defilement-rtl 80s infinite linear;
+    animation: defilement-rtl 120s infinite linear;
+}
+
+.scroll-text:after{
+    content: attr(data-text);
+    position: absolute;
+    white-space: nowrap;
+    padding-left: 10px;
 }
 
 @keyframes defilement-rtl {

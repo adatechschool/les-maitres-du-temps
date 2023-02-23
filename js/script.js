@@ -90,11 +90,12 @@ document.getElementById('bar12').style.zIndex=3
 document.getElementById('bar').style.display = 'none'
 }
 }
-
+ 
 async function fetchCountry(countryName, apiToday, apiAqi, apiPast){
 	
 	let date = new Date()
-	let hour = date.getHours()
+	//let hour = date.getHours()
+	let hour = 16
 	let month = date.getMonth() + 1
 	let day = date.getDate()
 
@@ -389,6 +390,6 @@ fonctionGlobale()
 
 
 
-const funFacts = "L’endroit le plus profond de la mer n’a été visité que par trois personnes.🤿  Quel est le comble pour un écolo ? Se mettre au vert... 🌳  DANEMARK : L’urine de festivaliers réutilisée pour cultiver de l’orge et brasser de la bière. 🍺 Le pastis est écolo, car il préserve la couche d'eau jaune. 🌍  CHINE : Il crée une brique en aspirant les particules d’air pollué de Pékin. 🧱 TURQUIE : Produire son électricité grâce à des coques de pistaches, c’est possible !  🥜  En 2013, une ville au Pérou installe un panneau publicitaire géant qui produit de l’eau potable. 💦 Un américain utilise environ 600 litres d’eau potable par jour. Tandis qu’un européen en utilise 200 et un africain doit survivre avec moins de 30 litres par jour.💧 Environ 10 000 litres d’eau sont nécessaires pour confectionner un seul jean.👖"
-document.getElementById("scroll-text").innerHTML = funFacts
+const funFacts = "L’endroit le plus profond de la mer n’a été visité que par trois personnes.🤿  Quel est le comble pour un écolo ? Se mettre au vert... 🌳  DANEMARK : L’urine de festivaliers réutilisée pour cultiver de l’orge et brasser de la bière. 🍺 Le pastis est écolo, car il préserve la couche d'eau jaune. 🌍  CHINE : Il crée une brique en aspirant les particules d’air pollué de Pékin. 🧱 TURQUIE : Produire son électricité grâce à des coques de pistaches, c’est possible !  🥜  En 2013, une ville au Pérou installe un panneau publicitaire géant qui produit de l’eau potable. 💦 Un américain utilise environ 600 litres d’eau potable par jour. Tandis qu’un européen en utilise 200 et un africain moins de 30 litres par jour.💧 Environ 10 000 litres d’eau sont nécessaires pour confectionner un seul jean.👖"
+//document.getElementsByClassName("scroll-text").innerHTML = funFacts
 
